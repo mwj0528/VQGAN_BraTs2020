@@ -1,0 +1,47 @@
+# downsample f  8, disc_start 50001, codebook 2048
+model:
+  base_learning_rate: 2.0e-6 
+  target: taming.models.vqgan.VQModel
+  params:
+    embed_dim: 256
+    n_embed: 2048
+    ddconfig:
+      double_z: False
+      z_channels: 256
+      resolution: 256
+      in_channels: 3        # RGB 입력
+      out_ch: 3             # RGB 출력
+      ch: 128
+      ch_mult: [1, 2, 2, 4]   # f = 2^{len(ch_mult)-1} = 8
+      num_res_blocks: 2
+      attn_resolutions: [16]
+      dropout: 0.0
+
+    lossconfig:
+      target: taming.modules.losses.vqperceptual.VQLPIPSWithDiscriminator
+      params:
+        disc_conditional: False
+        disc_in_channels: 3      # Discriminator도 3채널 이미지 입력
+        disc_start: 50001
+        disc_weight: 0.8
+        codebook_weight: 1.0
+
+data:
+  target: main.DataModuleFromConfig
+  params:
+    batch_size: 8
+    num_workers: 8
+    train:
+      target: taming.data.brats.CustomTrain
+      params:
+        training_images_list_file: /mnt/MW/VQGAN_BraTs/data/brats_train.txt
+        size: 256
+    validation:
+      target: taming.data.brats.CustomTest
+      params:
+        test_images_list_file: /mnt/MW/VQGAN_BraTs/data/brats_val.txt
+        size: 256
+        
+# python main.py --base configs/brats_vqgan_5.yaml -t True --gpus 0,1 --resume logs/...
+# python main.py --base configs/brats_vqgan_5.yaml -t True --gpus 0,1
+

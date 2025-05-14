@@ -1,0 +1,6 @@
+f = 8, codebook = 2048
+Mean SSIM: 0.9027019553963541
+Mean PSNR: 27.710745901851183
+Input Directory: /mnt/MW/VQGAN_BraTs/reconstructions_3/input
+Reconstruction Directory: /mnt/MW/VQGAN_BraTs/reconstructions_3/recon
+Number of Images: 500

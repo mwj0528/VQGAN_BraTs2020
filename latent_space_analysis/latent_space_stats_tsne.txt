@@ -1,0 +1,26 @@
+Latent Space Analysis (t-SNE)
+==================================================
+
+전체 데이터 수: 5000개
+시각화에 사용된 데이터 수: 5000개
+
+Image Type: t2
+Number of samples: 1241
+Mean position: [0.31512603 7.4275203 ]
+Standard deviation: [29.950912 25.111568]
+------------------------------
+Image Type: flair
+Number of samples: 1259
+Mean position: [13.699813   2.2378702]
+Standard deviation: [23.393484 26.00123 ]
+------------------------------
+Image Type: t1
+Number of samples: 1281
+Mean position: [-1.4843231 -2.8992767]
+Standard deviation: [30.582077 25.483631]
+------------------------------
+Image Type: t1gd
+Number of samples: 1219
+Mean position: [-16.71508   -9.340342]
+Standard deviation: [36.067673 26.770496]
+------------------------------

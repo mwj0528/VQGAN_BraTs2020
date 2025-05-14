@@ -1,0 +1,24 @@
+Results by Contrast:
+
+T1:
+Number of images: 124
+Mean SSIM: 0.9186
+Mean PSNR: 29.9267
+
+T2:
+Number of images: 130
+Mean SSIM: 0.9361
+Mean PSNR: 32.1294
+
+T1gd:
+Number of images: 111
+Mean SSIM: 0.9420
+Mean PSNR: 30.8753
+
+FLAIR:
+Number of images: 135
+Mean SSIM: 0.9374
+Mean PSNR: 30.0290
+
+Input Directory: /mnt/MW/VQGAN_BraTs2020/reconstructions_2/input
+Reconstruction Directory: /mnt/MW/VQGAN_BraTs2020/reconstructions_2/recon
