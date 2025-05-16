@@ -34,8 +34,10 @@ python reconstruct_ssim_psnr.py \
 ## Example Result
 
 ### downsampling factor f = 16, discriminator start = 50001(brats_vqgan_1.yaml)
-![image](https://github.com/user-attachments/assets/d2929652-3289-400a-af87-3f1fc3832d7a)
+![image](https://github.com/user-attachments/assets/4fa278e3-c0ee-42b5-b7f1-64c659d13830)
+
 
 
 ### downsampling factor f = 8, discriminator start = 50001(brats_vqgan_2.yaml)
-![image](https://github.com/user-attachments/assets/7b4cfd8f-e77d-4caf-ad13-2d2d17ecafa0)
+![image](https://github.com/user-attachments/assets/0f020750-8cb4-48d8-b2af-5432743d7703)
+
