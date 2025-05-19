@@ -1,4 +1,5 @@
-# Using VQGAN to perform reconstruction task using multiple modality data of 2D slice of BraTs2020
+# VQGAN_BraTs2020
+Using VQGAN to perform reconstruction task using multiple modality data of 2D slice of BraTs2020
 
 ## Reference
 ### [taming-transformers](https://github.com/CompVis/taming-transformers.git)
