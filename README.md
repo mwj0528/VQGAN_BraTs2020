@@ -1,4 +1,4 @@
-# VQGAN_BraTs2020
+![image](https://github.com/user-attachments/assets/1670e13f-3390-4c75-b022-7a1876e7f77e)# VQGAN_BraTs2020
 Using VQGAN to perform reconstruction task using multiple modality data of 2D slice of BraTs2020
 
 ## Reference
@@ -33,11 +33,12 @@ python reconstruct_ssim_psnr.py \
 
 ## Example Result
 
-### downsampling factor f = 16, discriminator start = 50001(brats_vqgan_1.yaml)
+### downsampling factor f = 16, discriminator start = 50001(brats_vqgan_1.yaml, step: 130,415)
 ![image](https://github.com/user-attachments/assets/4fa278e3-c0ee-42b5-b7f1-64c659d13830)
+Mean SSIM: 0.8913, Mean PSNR: 25.4447
 
 
-
-### downsampling factor f = 8, discriminator start = 50001(brats_vqgan_2.yaml)
-![image](https://github.com/user-attachments/assets/0f020750-8cb4-48d8-b2af-5432743d7703)
+### downsampling factor f = 8, discriminator start = 50001(brats_vqgan_2.yaml, step: 242,569)
+![image](https://github.com/user-attachments/assets/28b3c4cf-48b4-4346-9156-ea8902a7e71c)
+Mean SSIM: 0.9538, Mean PSNR: 33.399
 
