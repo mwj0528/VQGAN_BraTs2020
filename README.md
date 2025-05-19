@@ -1,5 +1,4 @@
-![image](https://github.com/user-attachments/assets/1670e13f-3390-4c75-b022-7a1876e7f77e)# VQGAN_BraTs2020
-Using VQGAN to perform reconstruction task using multiple modality data of 2D slice of BraTs2020
+# Using VQGAN to perform reconstruction task using multiple modality data of 2D slice of BraTs2020
 
 ## Reference
 ### [taming-transformers](https://github.com/CompVis/taming-transformers.git)
@@ -35,6 +34,7 @@ python reconstruct_ssim_psnr.py \
 
 ### downsampling factor f = 16, discriminator start = 50001(brats_vqgan_1.yaml, step: 130,415)
 ![image](https://github.com/user-attachments/assets/4fa278e3-c0ee-42b5-b7f1-64c659d13830)
+
 Mean SSIM: 0.8913, Mean PSNR: 25.4447
 
 
